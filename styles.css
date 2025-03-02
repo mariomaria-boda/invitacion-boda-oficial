@@ -58,6 +58,43 @@ body {
     max-width: 100%;
 }
 
+/* ===== IMÁGENES DE CEREMONIA Y CELEBRACIÓN ===== */
+.celebration-container img,
+.ceremony-container img {
+    width: 100%; /* Se ajusta al ancho del contenedor */
+    height: auto; /* Mantiene la proporción */
+    max-width: 550px; /* Límite de tamaño en pantallas grandes */
+    display: block;
+    margin: 0 auto;
+}
+
+/* ===== AJUSTE DEL TIMELINE EN MÓVIL ===== */
+@media screen and (max-width: 768px) {
+    .timeline-container {
+        position: relative;
+    }
+
+    .timeline::before {
+        left: 75px; /* Ajuste para alinear con los iconos */
+    }
+
+    .event-circle {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .event-bubble {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .event-inline-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
 
 /* Sección de bienvenida */
 .hero {
