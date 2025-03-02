@@ -231,23 +231,15 @@ body {
 /* ===== AJUSTE DEL TIMELINE EN MÓVIL ===== */
 @media screen and (max-width: 768px) {
     .timeline::before {
-        left: 50px;  /* Ajuste para que la línea esté correctamente debajo en móvil */
-    }
-
-    .event-circle {
-        width: 30px;
-        height: 30px;
-        margin-right: 10px;
-    }
-
-    .event-bubble {
-        width: 80%;
-        font-size: 14px;
-    }
-
-    .event-inline-icon {
-        width: 25px;
-        height: 25px;
+        content: "";
+        position:absolute;
+        left: 89px;  /* Ajusta para que esté justo debajo de los iconos */
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background-color: var(--timeline-color, #d4b8a4);
+        z-index: -1;
+        transition: background-color 0.3s ease;
     }
 }
 
@@ -261,17 +253,20 @@ body {
     position: relative;
 }
 
-/* Ajuste general de la línea */
-.timeline::before {
-    content: "";
-    position: absolute;
-    left: 270px;  /* Ajusta para que esté justo debajo de los iconos */
-    top: 0;
-    width: 4px;
-    height: 100%;
-    background-color: var(--timeline-color, #d4b8a4);
-    z-index: -1;
-    transition: background-color 0.3s ease;
+/* Línea del timeline (ajustada para escritorio) */
+@media screen and (min-width: 769px) {
+    /* Ajuste general de la línea */
+    .timeline::before {
+        content: "";
+        position:absolute;
+        left: 270px;  /* Ajusta para que esté justo debajo de los iconos */
+        top: 0;
+        width: 4px;
+        height: 100%;
+        background-color: var(--timeline-color, #d4b8a4);
+        z-index: -1;
+        transition: background-color 0.3s ease;
+    }
 }
 
 /* Bocadillos de evento más pequeños */
