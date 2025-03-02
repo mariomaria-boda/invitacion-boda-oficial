@@ -244,7 +244,7 @@ body {
     .timeline::before {
         content: "";
         position:absolute;
-        left: 68px;  /* Ajusta para que esté justo debajo de los iconos */
+        left: 67px;  /* Ajusta para que esté justo debajo de los iconos */
         top: 0;
         width: 4px;
         height: 100%;
