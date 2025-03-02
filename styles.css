@@ -1,0 +1,550 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f8f4f4;
+}
+
+/* Estilo para los títulos de secciones */
+.section-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 42px;
+    font-weight: 700;
+    color: #5a4735;
+    letter-spacing: 1px;
+}
+
+/* Estilo general para los botones */
+.button-style {
+    background-color: #e6d5c6; /* Beige más oscuro en su estado normal */
+    color: #333; /* Texto oscuro para contraste */
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 12px 30px;
+    border: none; /* Sin contorno */
+    border-radius: 50px; /* Forma circular */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Efecto hover */
+.button-style:hover {
+    background-color: #d4b8a4; /* Un tono más oscuro al pasar el cursor */
+}
+
+/* Estilo para los textos descriptivos */
+.description-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #3a3a3a;
+    line-height: 1.5;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Aplica un efecto de difuminado solo en los bordes */
+.watercolor-effect {
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+
+/* Sección de bienvenida */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?wedding') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 30px;
+}
+
+/* Seccion cuenta atras */
+/* "Save the Date" - Estilo manuscrito */
+.save-the-date {
+    font-family: 'Dancing Script', cursive;
+    font-size: 42px;
+    font-weight: 700;
+    color: #5a4735;
+    letter-spacing: 1px;
+}
+
+/* Fecha "20.09.2025" - Estilo elegante */
+.wedding-date {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+/* Contenedor del Calendario */
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Estilo de la Imagen del Calendario */
+.calendar-icon {
+    width: 80px; /* Ajusta el tamaño según necesidad */
+    opacity: 0.8; /* Suaviza el color */
+}
+
+/* Cuenta regresiva */
+/* Sección de la cuenta regresiva */
+.countdown-section {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contenedor de la cuenta regresiva */
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Cada caja de tiempo */
+.time-box {
+    text-align: center;
+}
+
+/* Números grandes y estilizados con la misma estética que la fecha */
+.time-box span {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+/* Etiquetas de tiempo (Días, Hrs, Mins, Segs) */
+.time-box p {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+/* Boton guardar fecha */
+/* Contenedor para centrar el botón */
+.save-date-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+
+/* Sección de Foto Pareja */
+.photo-section {
+    text-align: center;
+    padding: 40px 20px;
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+/* Contenedor redondo */
+.photo-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #fff; /* Asegura que el fondo sea uniforme */
+}
+
+/* Imagen de la pareja */
+.couple-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.01); /* Fuerza el navegador a renderizar mejor */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: optimizeQuality;
+}
+
+
+
+/* Título "Nos Casamos" */
+.photo-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+/* Frase romántica */
+.photo-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #3a3a3a;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+
+/* Sección de Planning */
+.planning-section {
+    text-align: center;
+    padding: 40px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor principal de la línea de tiempo */
+.timeline-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+/* Línea de la timeline con color dinámico */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 259px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--timeline-color, #d4b8a4); /* Color inicial */
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+/* Cada evento en la línea de tiempo */
+.timeline-event {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 550px;
+}
+
+/* Círculo de los iconos (más pequeño) */
+.event-circle {
+    width: 35px;  /* Reducido */
+    height: 35px;  /* Reducido */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+/* Ajustar el círculo de fondo */
+.event-circle::before {
+    content: "";
+    position: absolute;
+    width: 45px; /* Más pequeño */
+    height: 45px; /* Más pequeño */
+    background-color: #e8d6c3; /* Color beige */
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* Iconos dentro del círculo */
+.event-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+/* Bocadillo de evento (ahora más pequeño) */
+.event-bubble {
+    background-color: #fdf8f3;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 85%;
+}
+
+/* Contenido dentro del bocadillo */
+.event-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+
+/* Iconos dentro del bocadillo (ahora más grandes) */
+.event-inline-icon {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+/* Contenedor del texto */
+.event-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+/* Hora del evento */
+.event-time {
+    font-weight: bold;
+    color: #5c3d2e;
+}
+
+/* Descripción del evento */
+.event-description {
+    margin: 0;
+    color: #5c3d2e;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Aplicar animación a los iconos de corazón y bus */
+.event-circle img {
+    animation: blink 1.5s infinite alternate;
+}
+
+
+
+
+/* Sección de Detalles del Evento */
+.details {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contenedor de la ceremonia */
+.ceremony-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ceremony-container img,
+.celebration-container img {
+    max-width: 610px; /* Ajusta el tamaño a uno menor */
+}
+
+
+/* Estilo general de secciones */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Mapa */
+/* Ajuste de tamaño uniforme para los mapas */
+.map iframe {
+    width: 100%;
+    max-width: 600px; /* Tamaño fijo para ambos */
+    height: 350px; /* Altura uniforme */
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+/* Sección de Regalo */
+.regalo {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contenedor del regalo */
+.gift-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Imagen del regalo */
+.gift-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Dresscode */
+.dresscode-image {
+    width: 200px;
+    margin: 20px auto;
+}
+
+/* Estilos generales para la sección de autobuses */
+.bus-service {
+    background-color: #f5f3ef; /* Beige claro */
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Estilo de cada trayecto */
+.bus-trip {
+    margin: 20px 0;
+    padding: 15px;
+}
+
+.bus-icon-image {
+    width: 45px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    opacity: 0.8; /* Un poco de transparencia para suavidad */
+}
+
+
+/* Etiquetas de origen y destino */
+.bus-label {
+    font-size: 12px;
+    color: #7d7d7d;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.bus-location {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3a3a3a;
+    margin-bottom: 10px;
+}
+
+/* Estilo del horario */
+.bus-time-label {
+    font-size: 12px;
+    color: #7d7d7d;
+    font-weight: bold;
+}
+
+.bus-time {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3a3a3a;
+}
+
+/* Línea divisoria entre los trayectos */
+.bus-divider {
+    width: 60%;
+    height: 1px;
+    background-color: #d1c6b8;
+    border: none;
+    margin: 20px auto;
+}
+
+
+/* Hoteles */
+.hotel {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px solid #e6d5c6; /* Beige en los bordes */
+    border-radius: 10px;
+    max-width: 400px; /* Reducimos el ancho */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f8f5f1; /* Blanco roto */
+    color: #3a3a3a; /* Texto más visible */
+}
+
+
+
+/* Álbum de fotos */
+.album-image {
+    width: 80px;
+    margin: 20px auto;
+}
+
+
+/* Sección galería*/
+/* GALERÍA */
+.gallery-container {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.gallery img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    display: none;
+    border-radius: 10px;
+}
+
+/* Botones de navegación */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* ANIMACIÓN ICONO CÁMARA */
+@keyframes blink {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.1); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.camera-blink {
+    animation: blink 0.8s ease-in-out infinite;
+}
+
+

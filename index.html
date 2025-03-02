@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Boda</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Sección de Bienvenida -->
+    <section class="hero">
+        <img src="media/logo.png" alt="Logo de la Boda" class="watercolor-effect">
+    </section>
+
+    <!-- Sección de Cuenta Regresiva -->
+    <section class="countdown-section">
+        <audio controls>
+            <source src="media/invitacion.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio.
+        </audio>
+
+        <h2 class="save-the-date">Save the Date</h2>
+        <p class="wedding-date">20.09.2025</p>
+
+        <!-- Icono de Calendario Estático -->
+        <div class="calendar-container">
+            <img src="media/calendar-2.png" alt="Calendario" class="calendar-icon">
+        </div>
+
+
+        <div class="countdown">
+            <div class="time-box">
+                <span id="days">000</span>
+                <p>Días</p>
+            </div>
+            <div class="time-box">
+                <span id="hours">00</span>
+                <p>Hrs</p>
+            </div>
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <p>Mins</p>
+            </div>
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <p>Segs</p>
+            </div>
+        </div>
+
+        <!-- Botón Guardar Fecha -->
+        <div class="save-date-container">
+            <a href="#" id="save-date-button" class="button-style" target="_blank">GUARDAR FECHA</a>
+        </div>
+
+    </section>
+
+    <!-- Sección Foto Pareja -->
+    <section class="photo-section">
+        <h2 class="photo-title">¡NOS CASAMOS!</h2>
+        <p class="photo-quote">
+            Hay momentos en la vida que son especiales por sí solos.<br>
+            Compartirlos con las personas que quieres los convierte en <br>
+            momentos inolvidables.<br>
+            Gracias por acompañarnos.
+        </p>
+        <div class="photo-container">
+            <img src="media/foto_pareja-3.jpg" alt="Novios" class="couple-photo">
+        </div>
+    </section>
+
+
+    <!-- Sección de Planning -->
+    <section class="planning-section">
+        <h2 class="section-title">Planning</h2>
+        <div class="timeline-container">
+            <div class="timeline">
+
+                <!-- Evento: Salida Autobús -->
+                <div class="timeline-event">
+                    <div class="event-circle">
+                        <img src="media/bus-2.png" alt="Bus" class="event-icon">
+                    </div>
+                    <div class="event-bubble">
+                        <div class="event-content">
+                            <img src="media/bus-2.png" alt="Bus" class="event-inline-icon">
+                            <div class="event-text">
+                                <span class="event-time">12:00</span>
+                                <p class="event-description">Salida autobús</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evento: Recepción de Invitados -->
+                <div class="timeline-event">
+                    <div class="event-circle">
+                        <img src="media/corazon-beis-2.png" alt="Recepción" class="event-icon">
+                    </div>
+                    <div class="event-bubble">
+                        <div class="event-content">
+                            <img src="media/reception-2.png" alt="Recepción" class="event-inline-icon">
+                            <div class="event-text">
+                                <span class="event-time">12:30</span>
+                                <p class="event-description">Recepción de invitados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evento: Ceremonia -->
+                <div class="timeline-event">
+                    <div class="event-circle">
+                        <img src="media/corazon-beis-2.png" alt="Ceremonia" class="event-icon">
+                    </div>
+                    <div class="event-bubble">
+                        <div class="event-content">
+                            <img src="media/ceremony-3.png" alt="Ceremonia" class="event-inline-icon">
+                            <div class="event-text">
+                                <span class="event-time">13:00</span>
+                                <p class="event-description">Ceremonia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evento: Cocktail -->
+                <div class="timeline-event">
+                    <div class="event-circle">
+                        <img src="media/corazon-beis-2.png" alt="Cocktail" class="event-icon">
+                    </div>
+                    <div class="event-bubble">
+                        <div class="event-content">
+                            <img src="media/cocktail-2.png" alt="Cocktail" class="event-inline-icon">
+                            <div class="event-text">
+                                <span class="event-time">14:00</span>
+                                <p class="event-description">Cocktail</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evento: Celebración -->
+                <div class="timeline-event">
+                    <div class="event-circle">
+                        <img src="media/corazon-beis-2.png" alt="Celebración" class="event-icon">
+                    </div>
+                    <div class="event-bubble">
+                        <div class="event-content">
+                            <img src="media/celebration-3.png" alt="Celebración" class="event-inline-icon">
+                            <div class="event-text">
+                                <span class="event-time">14:30</span>
+                                <p class="event-description">Celebración</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evento: Bailar -->
+                <div class="timeline-event">
+                    <div class="event-circle">
+                        <img src="media/corazon-beis-2.png" alt="Bailar" class="event-icon">
+                    </div>
+                    <div class="event-bubble">
+                        <div class="event-content">
+                            <img src="media/dance-3.png" alt="Bailar" class="event-inline-icon">
+                            <div class="event-text">
+                                <span class="event-time">20:00</span>
+                                <p class="event-description">Bailar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evento: Fin de Fiesta -->
+                <div class="timeline-event">
+                    <div class="event-circle">
+                        <img src="media/corazon-beis-2.png" alt="Fin de fiesta" class="event-icon">
+                    </div>
+                    <div class="event-bubble">
+                        <div class="event-content">
+                            <img src="media/end-3.png" alt="Fin de fiesta" class="event-inline-icon">
+                            <div class="event-text">
+                                <span class="event-time">05:00</span>
+                                <p class="event-description">Fin de fiesta</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evento: Vuelta Autobús (03:00) -->
+                <div class="timeline-event">
+                    <div class="event-circle">
+                        <img src="media/bus-2.png" alt="Bus" class="event-icon">
+                    </div>
+                    <div class="event-bubble">
+                        <div class="event-content">
+                            <img src="media/bus-2.png" alt="Bus" class="event-inline-icon">
+                            <div class="event-text">
+                                <span class="event-time">03:00</span>
+                                <p class="event-description">Vuelta autobús</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evento: Vuelta Autobús (05:00) -->
+                <div class="timeline-event">
+                    <div class="event-circle">
+                        <img src="media/bus-2.png" alt="Bus" class="event-icon">
+                    </div>
+                    <div class="event-bubble">
+                        <div class="event-content">
+                            <img src="media/bus-2.png" alt="Bus" class="event-inline-icon">
+                            <div class="event-text">
+                                <span class="event-time">05:00</span>
+                                <p class="event-description">Vuelta autobús</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Sección de Detalles del Evento (Ceremonia) -->
+    <section class="details">
+        <h2 class="section-title">La Ceremonia</h2>
+        <div class="ceremony-container">
+            <img src="media/ceremonia-3.png" alt="Iglesia Santa María Magdalena" class="watercolor-effect">
+            <h3 class="description-text">CEREMONIA</h3>
+            <p class="description-text">12:30</p>
+            <p class="description-text"><strong>Iglesia Santa María Magdalena</strong></p>
+            <p class="description-text">Torrelaguna</p>
+        </div>
+        <div class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.2887445893467!2d-3.5391800842816947!3d40.82745897931882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4155f1e32b785d%3A0x29195b08647348a2!2sIglesia%20Santa%20Mar%C3%ADa%20Magdalena%2C%20Torrelaguna!5e0!3m2!1ses!2ses!4v1714406889995!5m2!1ses!2ses" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Sección de La Celebración -->
+    <section class="celebration">
+        <h2 class="section-title">La Celebración</h2>
+        <div class="celebration-container">
+            <img src="media/celebracion-3.png" alt="Salón de Eventos 'El Paraíso'" class="watercolor-effect">
+            <h3 class="description-text">CELEBRACIÓN</h3>
+            <p class="description-text">14:30</p>
+            <p class="description-text"><strong>Finca Soto de Gracia</strong></p>
+            <p class="description-text">Valdetorres del Jarama</p>
+        </div>
+        <div class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.1234567890123!2d-3.5000000000000!3d40.8000000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4181234567890%3A0xabcdef1234567890!2sFinca%20Soto%20de%20Gracia!5e0!3m2!1ses!2ses!4v1714406889995!5m2!1ses!2ses" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>               
+    </section>
+
+    <!-- Sección de Asistencia -->
+    <section class="asistencia">
+        <h2 class="section-title">Confirma tu Asistencia</h2>
+        <p class="description-text">¿NOS CONFIRMAÍS ASISTENCIA?.</p>
+        <a href="https://forms.gle/s81cU1Der4t9yNFx9" target="_blank" class="button-style">CONFIRMAR ASISTENCIA</a>
+        <p class="description-text">📞 María: 675 022 119</p>
+        <p class="description-text">📞 Mario: 645 771 950</p>
+    </section>  
+    
+
+    <!-- Sección de Regalo -->
+    <section class="regalo">
+        <h2 class="section-title">Lista de Bodas</h2>
+        <div class="gift-container">
+            <img src="media/regalo-2.png" alt="Lista de bodas" class="watercolor-effect">
+            <h3 class="description-text">Nuestro mejor regalo...</h3>
+            <p class="description-text">
+                Es vuestra presencia, no podéis faltar. Pero si queréis ayudarnos con nuestra luna de miel, os dejamos el IBAN:
+            </p>
+            <p class="description-text"><strong>ES42 0182 5322 2200 0007 6599</strong></p>
+        </div>
+    </section>
+
+
+    <!-- Sección de Dresscode -->
+    <section class="dresscode">
+        <h2 class="section-title">Dreescode</h2>
+        <img src="media/dresscode-2.gif" alt="Dresscode" class="dresscode-image">
+        <p class="description-text">El evento es de etiqueta, por lo que te pedimos asistir con traje formal.</p>
+    </section>
+
+    <!-- Sección de Servicio de Autobuses -->
+    <section class="bus-service">
+        <h2 class="section-title">Servicio de Autobuses</h2>
+        <div class="bus-trip">
+            <img src="media/ubicacion-2.png" alt="Ubicación" class="bus-icon-image">
+            <p class="bus-label">ORIGEN</p>
+            <p class="bus-location">Sitio desde el que sale el autobús de ida</p>
+    
+            <p class="bus-label">DESTINO</p>
+            <p class="bus-location">Sitio al que llega el autobús de ida</p>
+    
+            <p class="bus-time-label">HORARIO DISPONIBLE</p>
+            <p class="bus-time">11:00</p>
+        </div>
+    
+        <hr class="bus-divider">
+    
+        <div class="bus-trip">
+            <img src="media/ubicacion-2.png" alt="Ubicación" class="bus-icon-image">
+            <p class="bus-label">ORIGEN</p>
+            <p class="bus-location">Sitio desde el que sale el autobús de vuelta</p>
+    
+            <p class="bus-label">DESTINO</p>
+            <p class="bus-location">Sitio al que llega el autobús de vuelta</p>
+    
+            <p class="bus-time-label">HORARIO DISPONIBLE</p>
+            <p class="bus-time">03:00 y 05:00</p>
+        </div>
+    </section>
+    
+
+    <!-- Sección de Hoteles -->
+    <section class="hoteles">
+        <h2 class="section-title">Hoteles</h2>
+        <div class="hotel">
+            <h3 class="description-text"><strong>Hotel Restaurante Posada del Camino Real</strong></h3>
+            <p class="description-text">C/San Francisco, 6</p>
+        </div>
+        <div class="hotel">
+            <h3 class="description-text"><strong>Apartamentos rurales</strong></h3>
+            <p class="description-text">Plaza Mayor, 1</p>
+        </div>
+    </section>
+
+    <!-- Sección de Álbum de Fotos -->
+    <section class="album">
+        <h2 class="section-title">Álbum de Fotos</h2>
+        <img src="media/camara-2.png" alt="Cámara de fotos" class="album-image">
+        <p class="description-text">Publica fotos subiéndolas al álbum compartido de Google Fotos de los novios.</p>
+        <a href="https://photos.app.goo.gl/e6TUrgjZAH5jRoRRA" target="_blank" class="button-style">ABRIR ÁLBUM</a>        
+    </section>
+
+    <!-- Sección de Galería de Fotos -->
+    <section class="galeria">
+        <div class="gallery-container">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="gallery-wrapper">
+                <div class="gallery">
+                    <img src="media/novios1.jpg" alt="Foto de los novios" class="slide">
+                    <img src="media/novios2.jpg" alt="Foto de los novios" class="slide">
+                    <img src="media/novios3.jpg" alt="Foto de los novios" class="slide">
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+
+
+
+</body>
+</html>
