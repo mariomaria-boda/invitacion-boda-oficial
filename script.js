@@ -66,4 +66,12 @@ document.addEventListener("DOMContentLoaded", function () {
         cameraIcon.classList.toggle("camera-blink");
     }, 800);
 
+    // ANIMACIÓN DEL ICONO DEL CALENDARIO
+    const calendarIcon = document.querySelector(".calendar-icon");
+    if (calendarIcon) {
+        setInterval(() => {
+            calendarIcon.classList.toggle("calendar-blink");
+        }, 800);
+    }
+
 });

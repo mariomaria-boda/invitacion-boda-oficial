@@ -118,6 +118,17 @@ body {
     opacity: 0.8; /* Suaviza el color */
 }
 
+@keyframes blink {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(1.1); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.calendar-blink {
+    animation: blink 0.8s ease-in-out infinite;
+}
+
+
 /* Cuenta regresiva */
 /* Sección de la cuenta regresiva */
 .countdown-section {
@@ -233,7 +244,7 @@ body {
     .timeline::before {
         content: "";
         position:absolute;
-        left: 89px;  /* Ajusta para que esté justo debajo de los iconos */
+        left: 78px;  /* Ajusta para que esté justo debajo de los iconos */
         top: 0;
         width: 4px;
         height: 100%;
