@@ -68,34 +68,6 @@ body {
     margin: 0 auto;
 }
 
-/* ===== AJUSTE DEL TIMELINE EN MÓVIL ===== */
-@media screen and (max-width: 768px) {
-    .timeline-container {
-        position: relative;
-    }
-
-    .timeline::before {
-        left: 75px; /* Ajuste para alinear con los iconos */
-    }
-
-    .event-circle {
-        width: 40px;
-        height: 40px;
-        margin-right: 10px;
-    }
-
-    .event-bubble {
-        width: 80%;
-        font-size: 14px;
-    }
-
-    .event-inline-icon {
-        width: 30px;
-        height: 30px;
-    }
-}
-
-
 /* Sección de bienvenida */
 .hero {
     background: url('https://source.unsplash.com/1600x900/?wedding') no-repeat center center/cover;
@@ -193,8 +165,6 @@ body {
 }
 
 
-
-
 /* Sección de Foto Pareja */
 .photo-section {
     text-align: center;
@@ -228,8 +198,6 @@ body {
     image-rendering: optimizeQuality;
 }
 
-
-
 /* Título "Nos Casamos" */
 .photo-title {
     font-family: 'Playfair Display', serif;
@@ -260,7 +228,30 @@ body {
     align-items: center;
 }
 
-/* Contenedor principal de la línea de tiempo */
+/* ===== AJUSTE DEL TIMELINE EN MÓVIL ===== */
+@media screen and (max-width: 768px) {
+    .timeline::before {
+        left: 50px;  /* Ajuste para que la línea esté correctamente debajo en móvil */
+    }
+
+    .event-circle {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .event-bubble {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .event-inline-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* ===== ESTILO GENERAL DE TIMELINE ===== */
 .timeline-container {
     display: flex;
     justify-content: center;
@@ -270,27 +261,47 @@ body {
     position: relative;
 }
 
-/* Línea de la timeline con color dinámico */
+/* Ajuste general de la línea */
 .timeline::before {
     content: "";
     position: absolute;
-    left: 259px;
+    left: 270px;  /* Ajusta para que esté justo debajo de los iconos */
     top: 0;
     width: 4px;
     height: 100%;
-    background-color: var(--timeline-color, #d4b8a4); /* Color inicial */
+    background-color: var(--timeline-color, #d4b8a4);
     z-index: -1;
     transition: background-color 0.3s ease;
 }
 
-/* Cada evento en la línea de tiempo */
+/* Bocadillos de evento más pequeños */
+.event-bubble {
+    background-color: #fdf8f3;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 65%; /* Reducido para que no sean tan grandes */
+    font-size: 14px;
+}
+
+/* Ajuste en los eventos */
 .timeline-event {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     width: 100%;
-    max-width: 550px;
+    max-width: 500px;
 }
+
+/* Iconos dentro del círculo */
+.event-icon {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
 
 /* Círculo de los iconos (más pequeño) */
 .event-circle {
@@ -314,13 +325,6 @@ body {
     background-color: #e8d6c3; /* Color beige */
     border-radius: 50%;
     z-index: -1;
-}
-
-/* Iconos dentro del círculo */
-.event-icon {
-    width: 28px;
-    height: 28px;
-    object-fit: contain;
 }
 
 /* Bocadillo de evento (ahora más pequeño) */
