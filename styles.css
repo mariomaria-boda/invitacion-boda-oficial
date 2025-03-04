@@ -346,7 +346,7 @@ body {
 
 /* Bocadillo de evento (ahora más pequeño) */
 .event-bubble {
-    background-color: #d8c7f5a1;
+    background-color: #dfd2f5a1;
     padding: 10px 25px;
     border-radius: 10px;
     display: flex;
