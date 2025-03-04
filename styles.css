@@ -1,6 +1,6 @@
 /* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -20,7 +20,7 @@ body {
 .button-style {
     background-color: #e6d5c6; /* Beige más oscuro en su estado normal */
     color: #333; /* Texto oscuro para contraste */
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -40,7 +40,7 @@ body {
 
 /* Estilo para los textos descriptivos */
 .description-text {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 20px;
     font-weight: 400;
     color: #3a3a3a;
@@ -68,20 +68,10 @@ body {
     margin: 0 auto;
 }
 
+
 /* Sección de bienvenida */
 .hero {
-    background: url('https://source.unsplash.com/1600x900/?wedding') no-repeat center center/cover;
-    color: white;
-    padding: 100px 20px;
-}
-
-.hero h1 {
-    font-size: 50px;
-    margin-bottom: 10px;
-}
-
-.hero h2 {
-    font-size: 30px;
+    background: url('media/logo.png') no-repeat center center/cover;
 }
 
 /* Seccion cuenta atras */
@@ -96,7 +86,7 @@ body {
 
 /* Fecha "20.09.2025" - Estilo elegante */
 .wedding-date {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 24px;
     font-weight: 400;
     color: #333;
@@ -150,7 +140,7 @@ body {
 
 /* Números grandes y estilizados con la misma estética que la fecha */
 .time-box span {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 24px;
     font-weight: 400;
     color: #333;
@@ -159,7 +149,7 @@ body {
 
 /* Etiquetas de tiempo (Días, Hrs, Mins, Segs) */
 .time-box p {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 14px;
     font-weight: 400;
     color: #666;
@@ -178,11 +168,13 @@ body {
 
 /* Sección de Foto Pareja */
 .photo-section {
+    background-color: #f5f3ef; /* Beige claro */
     text-align: center;
     padding: 40px 20px;
     width: 90%;
-    max-width: 600px;
-    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Contenedor redondo */
@@ -211,7 +203,7 @@ body {
 
 /* Título "Nos Casamos" */
 .photo-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 22px;
     font-weight: bold;
     color: #333;
@@ -220,7 +212,7 @@ body {
 
 /* Frase romántica */
 .photo-quote {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 20px;
     font-weight: 400;
     color: #3a3a3a;
@@ -233,7 +225,7 @@ body {
 .planning-section {
     text-align: center;
     padding: 40px 20px;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -244,7 +236,7 @@ body {
     .timeline::before {
         content: "";
         position:absolute;
-        left: 67px;  /* Ajusta para que esté justo debajo de los iconos */
+        left: 72px;  /* Ajusta para que esté justo debajo de los iconos */
         top: 0;
         width: 4px;
         height: 100%;
@@ -394,10 +386,13 @@ body {
 
 /* Sección de Detalles del Evento */
 .details {
+    background-color: #f5f3ef; /* Beige claro */
     text-align: center;
     padding: 40px 20px;
-    max-width: 600px;
-    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Contenedor de la ceremonia */
@@ -431,6 +426,26 @@ section {
     border-radius: 10px;
 }
 
+.celebration{
+    text-align: center;
+    padding: 40px 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Asistencia */
+.asistencia{
+    background-color: #f5f3ef; /* Beige claro */
+    text-align: center;
+    padding: 40px 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 /* Sección de Regalo */
 .regalo {
@@ -455,18 +470,13 @@ section {
 }
 
 
-/* Dresscode */
-.dresscode-image {
-    width: 200px;
-    margin: 20px auto;
-}
-
 /* Estilos generales para la sección de autobuses */
 .bus-service {
     background-color: #f5f3ef; /* Beige claro */
     padding: 30px;
     text-align: center;
     border-radius: 10px;
+    width: 90%;
 }
 
 /* Estilo de cada trayecto */
@@ -543,6 +553,16 @@ section {
     margin: 20px auto;
 }
 
+.album{
+    background-color: #f5f3ef; /* Beige claro */
+    text-align: center;
+    padding: 40px 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 /* Sección galería*/
 /* GALERÍA */
@@ -593,5 +613,4 @@ section {
 .camera-blink {
     animation: blink 0.8s ease-in-out infinite;
 }
-
 
