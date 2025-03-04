@@ -254,7 +254,7 @@ body {
     .timeline::before {
         content: "";
         position:absolute;
-        left: 56px;  /* Ajusta para que esté justo debajo de los iconos */
+        left: 113px;  /* Ajusta para que esté justo debajo de los iconos */
         top: 0;
         width: 4px;
         height: 100%;
@@ -339,7 +339,7 @@ body {
     position: absolute;
     width: 45px; /* Más pequeño */
     height: 45px; /* Más pequeño */
-    background-color: #d2bef3c4;
+    background-color: #ddccf8;
     border-radius: 50%;
     z-index: -1;
 }
@@ -400,8 +400,6 @@ body {
 .event-circle img {
     animation: blink 1.5s infinite alternate;
 }
-
-
 
 
 /* Sección de Detalles del Evento */
