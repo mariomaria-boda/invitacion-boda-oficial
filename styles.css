@@ -455,6 +455,30 @@ section {
     align-items: center;
 }
 
+/* Estilos para los enlaces de teléfono */
+.phone-link {
+    text-decoration: none; /* Quita el subrayado */
+    transition: color 0.3s;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: #3a3a3a;
+    line-height: 1.5;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.phone-link:hover {
+    color: #b38e6a; /* Cambio de color en hover */
+}
+
+/* Asegurar que no cambie de color al hacer clic */
+.phone-link:visited,
+.phone-link:active {
+    color: #5c3d2e; /* Mantiene el color original */
+    text-decoration: none;
+}
+
+
 
 /* Sección de Regalo */
 .regalo {
