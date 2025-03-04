@@ -20,7 +20,6 @@ body {
 .section-title {
     /*font-family: 'Dancing Script', cursive;*/
     font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
     font-size: 42px;
     font-weight: 700;
     color: #5a4735;
@@ -32,7 +31,7 @@ body {
     background-color:  #dfcff880; /* Beige más oscuro en su estado normal */
     color: #333; /* Texto oscuro para contraste */
     font-family: 'Cormorant Garamond', serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     letter-spacing: 1px;
     padding: 12px 30px;
@@ -52,7 +51,7 @@ body {
 /* Estilo para los textos descriptivos */
 .description-text {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: #3a3a3a;
     line-height: 1.5;
@@ -82,14 +81,16 @@ body {
 
 /* Sección de bienvenida */
 .hero {
-    background: url('media/logo.png') no-repeat center center/cover;
+    background: url('media/fondo-1.png') no-repeat center center/cover;
 }
+
+
 
 /* Seccion cuenta atras */
 /* "Save the Date" - Estilo manuscrito */
 .save-the-date {
     /*font-family: 'Dancing Script', cursive;*/
-    font-family: 'Cormorant Garamond', serif, cursive;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 42px;
     font-weight: 700;
     color: #5a4735;
@@ -98,8 +99,8 @@ body {
 
 /* Fecha "20.09.2025" - Estilo elegante */
 .wedding-date {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 24px;
+    font-family: 'Oranienbaum', 'serif';
+    font-size: 18px;
     font-weight: 400;
     color: #333;
     letter-spacing: 2px;
@@ -153,8 +154,8 @@ body {
 
 /* Números grandes y estilizados con la misma estética que la fecha */
 .time-box span {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 24px;
+    font-family: 'Oranienbaum', 'serif';
+    font-size: 18px;
     font-weight: 400;
     color: #333;
     letter-spacing: 2px;
@@ -163,7 +164,7 @@ body {
 /* Etiquetas de tiempo (Días, Hrs, Mins, Segs) */
 .time-box p {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
     color: #666;
     letter-spacing: 1px;
@@ -218,7 +219,7 @@ body {
 /* Título "Nos Casamos" */
 .photo-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
     color: #333;
     margin-top: 15px;
@@ -227,7 +228,7 @@ body {
 /* Frase romántica */
 .photo-quote {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: #3a3a3a;
     line-height: 1.5;
@@ -291,14 +292,14 @@ body {
 
 /* Bocadillos de evento más pequeños */
 .event-bubble {
-    background-color: #d2bef3c4;
-    padding: 10px 15px;
-    border-radius: 8px;
+    background-color: #d8c7f5a1;
+    padding: 10px 25px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-    width: 65%; /* Reducido para que no sean tan grandes */
-    font-size: 14px;
+    width: 90%; /* Aumentar de 85% a 90% */
+    max-width: 600px; /* Agregar un ancho máximo */
 }
 
 /* Ajuste en los eventos */
@@ -345,8 +346,8 @@ body {
 
 /* Bocadillo de evento (ahora más pequeño) */
 .event-bubble {
-    background-color: #dfcff880;
-    padding: 10px 18px;
+    background-color: #d8c7f5a1;
+    padding: 10px 25px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -364,8 +365,8 @@ body {
 
 /* Iconos dentro del bocadillo (ahora más grandes) */
 .event-inline-icon {
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
     object-fit: contain;
 }
 
@@ -380,6 +381,7 @@ body {
 .event-time {
     font-weight: bold;
     color: #5c3d2e;
+    font-family: 'Oranienbaum', 'serif';
 }
 
 /* Descripción del evento */
@@ -471,7 +473,7 @@ section {
     text-decoration: none; /* Quita el subrayado */
     transition: color 0.3s;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
+    font-size: 18px;
     color: #3a3a3a;
     line-height: 1.5;
     margin-top: 10px;
@@ -514,6 +516,10 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+#iban{
+    font-family: 'Oranienbaum', 'serif';
+}
+
 
 /* Estilos generales para la sección de autobuses */
 .bus-service {
@@ -541,14 +547,14 @@ section {
 
 /* Etiquetas de origen y destino */
 .bus-label {
-    font-size: 12px;
+    font-size: 18px;
     color: #7d7d7d;
     font-weight: bold;
     margin-top: 10px;
 }
 
 .bus-location {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bold;
     color: #3a3a3a;
     margin-bottom: 10px;
@@ -556,13 +562,13 @@ section {
 
 /* Estilo del horario */
 .bus-time-label {
-    font-size: 12px;
+    font-size: 18px;
     color: #7d7d7d;
     font-weight: bold;
 }
 
 .bus-time {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     color: #3a3a3a;
 }
@@ -659,3 +665,6 @@ section {
     animation: blink 0.8s ease-in-out infinite;
 }
 
+.numeros{
+    font-family: 'Oranienbaum', 'serif';
+}
