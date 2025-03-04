@@ -1,10 +1,19 @@
 /* Estilos generales */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+
 body {
     font-family: 'Cormorant Garamond', serif;
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: #f8f4f4;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 /* Estilo para los títulos de secciones */
@@ -236,7 +245,7 @@ body {
     .timeline::before {
         content: "";
         position:absolute;
-        left: 72px;  /* Ajusta para que esté justo debajo de los iconos */
+        left: 68px;  /* Ajusta para que esté justo debajo de los iconos */
         top: 0;
         width: 4px;
         height: 100%;
