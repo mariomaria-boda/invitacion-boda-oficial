@@ -280,7 +280,7 @@ body {
     .timeline::before {
         content: "";
         position:absolute;
-        left: 279px;  /* Ajusta para que esté justo debajo de los iconos */
+        left: 316px;  /* Ajusta para que esté justo debajo de los iconos */
         top: 0;
         width: 4px;
         height: 100%;
