@@ -11,14 +11,16 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #f8f4f4;
+    /*background-color: #f8f4f4;*/
     width: 100%;
     overflow-x: hidden;
 }
 
 /* Estilo para los títulos de secciones */
 .section-title {
-    font-family: 'Dancing Script', cursive;
+    /*font-family: 'Dancing Script', cursive;*/
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
     font-size: 42px;
     font-weight: 700;
     color: #5a4735;
@@ -27,7 +29,7 @@ body {
 
 /* Estilo general para los botones */
 .button-style {
-    background-color: #e6d5c6; /* Beige más oscuro en su estado normal */
+    background-color:  #dfcff880; /* Beige más oscuro en su estado normal */
     color: #333; /* Texto oscuro para contraste */
     font-family: 'Cormorant Garamond', serif;
     font-size: 16px;
@@ -44,7 +46,7 @@ body {
 
 /* Efecto hover */
 .button-style:hover {
-    background-color: #d4b8a4; /* Un tono más oscuro al pasar el cursor */
+    background-color: #a78cd39a /* Un tono más oscuro al pasar el cursor */
 }
 
 /* Estilo para los textos descriptivos */
@@ -86,7 +88,8 @@ body {
 /* Seccion cuenta atras */
 /* "Save the Date" - Estilo manuscrito */
 .save-the-date {
-    font-family: 'Dancing Script', cursive;
+    /*font-family: 'Dancing Script', cursive;*/
+    font-family: 'Cormorant Garamond', serif, cursive;
     font-size: 42px;
     font-weight: 700;
     color: #5a4735;
@@ -133,6 +136,7 @@ body {
 .countdown-section {
     text-align: center;
     padding: 20px;
+    background: url('media/fondo-1.png') no-repeat center center/cover;
 }
 
 /* Contenedor de la cuenta regresiva */
@@ -177,13 +181,14 @@ body {
 
 /* Sección de Foto Pareja */
 .photo-section {
-    background-color: #f5f3ef; /* Beige claro */
+    /*background-color: #f5f3ef; /* Beige claro */
     text-align: center;
     padding: 40px 20px;
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: url('media/fondo-1.png') no-repeat center center/cover;
 }
 
 /* Contenedor redondo */
@@ -238,6 +243,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: url('media/fondo-1.png') no-repeat center center/cover;
+    position: relative; /* Necesario para manejar los z-index */
+    z-index: 1;
 }
 
 /* ===== AJUSTE DEL TIMELINE EN MÓVIL ===== */
@@ -249,8 +257,8 @@ body {
         top: 0;
         width: 4px;
         height: 100%;
-        background-color: var(--timeline-color, #d4b8a4);
-        z-index: -1;
+        background-color: var(--timeline-color, #b386faa4);
+        z-index: 10;
         transition: background-color 0.3s ease;
     }
 }
@@ -275,15 +283,15 @@ body {
         top: 0;
         width: 4px;
         height: 100%;
-        background-color: var(--timeline-color, #d4b8a4);
-        z-index: -1;
+        background-color: var(--timeline-color, #b386faa4);
+        z-index: 10;
         transition: background-color 0.3s ease;
     }
 }
 
 /* Bocadillos de evento más pequeños */
 .event-bubble {
-    background-color: #fdf8f3;
+    background-color: #d2bef3c4;
     padding: 10px 15px;
     border-radius: 8px;
     display: flex;
@@ -321,6 +329,7 @@ body {
     position: relative;
     margin-right: 20px;
     flex-shrink: 0;
+    z-index: 10; /* Hace que se vea por encima del fondo */
 }
 
 /* Ajustar el círculo de fondo */
@@ -329,14 +338,14 @@ body {
     position: absolute;
     width: 45px; /* Más pequeño */
     height: 45px; /* Más pequeño */
-    background-color: #e8d6c3; /* Color beige */
+    background-color: #d2bef3c4;
     border-radius: 50%;
     z-index: -1;
 }
 
 /* Bocadillo de evento (ahora más pequeño) */
 .event-bubble {
-    background-color: #fdf8f3;
+    background-color: #dfcff880;
     padding: 10px 18px;
     border-radius: 10px;
     display: flex;
@@ -395,13 +404,14 @@ body {
 
 /* Sección de Detalles del Evento */
 .details {
-    background-color: #f5f3ef; /* Beige claro */
+    /*background-color: #f5f3ef; /* Beige claro */
     text-align: center;
     padding: 40px 20px;
     width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: url('media/fondo-1.png') no-repeat center center/cover;
 }
 
 /* Contenedor de la ceremonia */
@@ -422,6 +432,7 @@ section {
     text-align: center;
     max-width: 800px;
     margin: auto;
+    background: url('media/fondo-1.png') no-repeat center center/cover;
 }
 
 /* Mapa */
@@ -446,7 +457,7 @@ section {
 
 /* Asistencia */
 .asistencia{
-    background-color: #f5f3ef; /* Beige claro */
+    /*background-color: #f5f3ef; /* Beige claro */
     text-align: center;
     padding: 40px 20px;
     width: 90%;
@@ -468,13 +479,13 @@ section {
 }
 
 .phone-link:hover {
-    color: #b38e6a; /* Cambio de color en hover */
+    color: #b590f186;/* Cambio de color en hover */
 }
 
 /* Asegurar que no cambie de color al hacer clic */
 .phone-link:visited,
 .phone-link:active {
-    color: #5c3d2e; /* Mantiene el color original */
+    color: #3a3a3a; /* Mantiene el color original */
     text-decoration: none;
 }
 
@@ -484,8 +495,9 @@ section {
 .regalo {
     text-align: center;
     padding: 40px 20px;
-    max-width: 600px;
+    width: 100%;
     margin: 0 auto;
+    /*background: url('media/fondo-1.png') no-repeat center center/cover;*/
 }
 
 /* Contenedor del regalo */
@@ -505,11 +517,11 @@ section {
 
 /* Estilos generales para la sección de autobuses */
 .bus-service {
-    background-color: #f5f3ef; /* Beige claro */
-    padding: 30px;
+    /*background-color: #f5f3ef; /* Beige claro */
+    padding: 40px 20px;
     text-align: center;
-    border-radius: 10px;
-    width: 90%;
+    /*border-radius: 10px;*/
+    width: 100%;
 }
 
 /* Estilo de cada trayecto */
@@ -559,7 +571,7 @@ section {
 .bus-divider {
     width: 60%;
     height: 1px;
-    background-color: #d1c6b8;
+    background-color: #d2bef3c4;
     border: none;
     margin: 20px auto;
 }
@@ -569,12 +581,12 @@ section {
 .hotel {
     margin-bottom: 20px;
     padding: 15px;
-    border: 2px solid #e6d5c6; /* Beige en los bordes */
+    border: 2px solid #d2bef3c4; /* Beige en los bordes */
     border-radius: 10px;
     max-width: 400px; /* Reducimos el ancho */
     margin-left: auto;
     margin-right: auto;
-    background-color: #f8f5f1; /* Blanco roto */
+    /*background-color: #f8f5f1; /* Blanco roto */
     color: #3a3a3a; /* Texto más visible */
 }
 
@@ -582,12 +594,12 @@ section {
 
 /* Álbum de fotos */
 .album-image {
-    width: 80px;
-    margin: 20px auto;
+    width: 120px;
+    margin: 5px auto;
 }
 
 .album{
-    background-color: #f5f3ef; /* Beige claro */
+    /*background-color: #f5f3ef; /* Beige claro */
     text-align: center;
     padding: 40px 20px;
     width: 90%;
@@ -620,7 +632,7 @@ section {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.3);
-    color: white;
+    color: #d2bef3c4;
     border: none;
     cursor: pointer;
     padding: 10px;
