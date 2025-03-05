@@ -652,6 +652,7 @@ section {
 .gallery-container {
     position: relative;
     max-width: 400px;
+    width: 90%;
     margin: auto;
     overflow: hidden;
 }
@@ -686,16 +687,6 @@ section {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* ANIMACIÓN ICONO CÁMARA */
-@keyframes blink {
-    0% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.5; transform: scale(1.1); }
-    100% { opacity: 1; transform: scale(1); }
-}
-
-.camera-blink {
-    animation: blink 0.8s ease-in-out infinite;
-}
 
 .numeros{
     font-family: 'Oranienbaum', 'serif';
