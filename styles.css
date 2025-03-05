@@ -14,6 +14,7 @@ body {
     /*background-color: #f8f4f4;*/
     width: 100%;
     overflow-x: hidden;
+    color: #333;
 }
 
 /* Estilo para los títulos de secciones */
@@ -22,7 +23,7 @@ body {
     font-family: 'Cormorant Garamond', serif;
     font-size: 42px;
     font-weight: 700;
-    color: #5a4735;
+    /*color: #000000;*/
     letter-spacing: 1px;
 }
 
@@ -85,6 +86,44 @@ body {
 }
 
 
+/* Estilo del Reproductor de Música */
+.music-player {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+    z-index: 9999; /* Asegura que esté por encima de otros elementos */
+}
+
+.music-player:hover {
+    transform: scale(1.1);
+}
+
+/* Botón de Música */
+#music-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+#music-icon {
+    width: 25px;
+    height: 25px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
 
 /* Seccion cuenta atras */
 /* "Save the Date" - Estilo manuscrito */
@@ -93,14 +132,15 @@ body {
     font-family: 'Cormorant Garamond', serif;
     font-size: 42px;
     font-weight: 700;
-    color: #5a4735;
+    /*color: #000000;*/
+    color: #333;
     letter-spacing: 1px;
 }
 
 /* Fecha "20.09.2025" - Estilo elegante */
 .wedding-date {
     font-family: 'Oranienbaum', 'serif';
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 400;
     color: #333;
     letter-spacing: 2px;
@@ -196,24 +236,18 @@ body {
 .photo-container {
     width: 300px;
     height: 300px;
-    border-radius: 50%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px auto;
-    background-color: #fff; /* Asegura que el fondo sea uniforme */
 }
 
 /* Imagen de la pareja */
 .couple-photo {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transform: scale(1.01); /* Fuerza el navegador a renderizar mejor */
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-    image-rendering: optimizeQuality;
+
 }
 
 /* Título "Nos Casamos" */
@@ -247,6 +281,7 @@ body {
     background: url('media/fondo-1.png') no-repeat center center/cover;
     position: relative; /* Necesario para manejar los z-index */
     z-index: 1;
+    color: #333;
 }
 
 /* ===== AJUSTE DEL TIMELINE EN MÓVIL ===== */
@@ -380,14 +415,12 @@ body {
 /* Hora del evento */
 .event-time {
     font-weight: bold;
-    color: #5c3d2e;
     font-family: 'Oranienbaum', 'serif';
 }
 
 /* Descripción del evento */
 .event-description {
     margin: 0;
-    color: #5c3d2e;
 }
 
 @keyframes blink {
@@ -415,6 +448,7 @@ body {
 }
 
 /* Contenedor de la ceremonia */
+.celebration-container,
 .ceremony-container {
     text-align: center;
     margin-bottom: 30px;
@@ -665,4 +699,17 @@ section {
 
 .numeros{
     font-family: 'Oranienbaum', 'serif';
+}
+
+.final{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+
+.final-nombres{
+    color:#de9efc;
 }

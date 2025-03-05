@@ -74,4 +74,49 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 800);
     }
 
+
+    // MUSICA
+    const musicButton = document.getElementById("music-toggle");
+    const musicIcon = document.getElementById("music-icon");
+    const audio = document.getElementById("background-music");
+
+    let isPlaying = false;
+
+    // Intentar iniciar la música automáticamente
+    function autoPlayMusic() {
+        audio.volume = 0.5; // Asegurar volumen medio
+        audio.play().then(() => {
+            musicIcon.src = "media/stop.png"; // Cambiar icono a stop
+            isPlaying = true;
+        }).catch(error => {
+            console.log("Reproducción automática bloqueada. Esperando interacción del usuario.");
+        });
+    }
+
+    // Llamar a la función para intentar reproducir
+    autoPlayMusic();
+
+    // Si la reproducción automática fue bloqueada, iniciar con la primera interacción
+    function enableAutoPlay() {
+        if (!isPlaying) {
+            autoPlayMusic();
+        }
+        document.removeEventListener("click", enableAutoPlay);
+        document.removeEventListener("scroll", enableAutoPlay);
+    }
+
+    document.addEventListener("click", enableAutoPlay, { once: true });
+    document.addEventListener("scroll", enableAutoPlay, { once: true });
+
+    // Botón para controlar la música
+    musicButton.addEventListener("click", () => {
+        if (isPlaying) {
+            audio.pause();
+            musicIcon.src = "media/play.png"; // Cambiar icono a play
+        } else {
+            audio.play();
+            musicIcon.src = "media/stop.png"; // Cambiar icono a stop
+        }
+        isPlaying = !isPlaying;
+    });
 });

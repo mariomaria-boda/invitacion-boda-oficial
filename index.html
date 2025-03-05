@@ -26,13 +26,21 @@
 
     <!-- Sección de Cuenta Regresiva -->
     <section class="countdown-section">
-        <audio controls>
-            <source src="media/invitacion.mp3" type="audio/mpeg">
-            Tu navegador no soporta audio.
-        </audio>
+        
+        <!-- Icono de Música -->
+        <div id="music-container" class="music-player">
+            <button id="music-toggle">
+                <img id="music-icon" src="media/play.png" alt="Play">
+            </button>
+            <audio id="background-music" loop>
+                <source src="media/invitacion.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio.
+            </audio>
+        </div>
 
-        <h2 class="save-the-date">Save the Date</h2>
-        <p class="wedding-date">20.09.2025</p>
+
+        <h2 class="save-the-date">SAVE THE DATE</h2>
+        <p class="wedding-date"><strong>20.09.2025</strong></p>
 
         <!-- Icono de Calendario Estático -->
         <div class="calendar-container">
@@ -71,19 +79,18 @@
         <h2 class="photo-title">¡NOS CASAMOS!</h2>
         <p class="photo-quote">
             Hay momentos en la vida que son especiales por sí solos.<br>
-            Compartirlos con las personas que quieres los convierte en <br>
-            momentos inolvidables.<br>
+            Compartirlos con las personas que quieres los <br>convierte en momentos inolvidables.<br>
             Gracias por acompañarnos.
         </p>
         <div class="photo-container">
-            <img src="media/foto_pareja-4.jpg" alt="Novios" class="couple-photo">
+            <img src="media/foto_pareja-7.png" alt="Novios" class="couple-photo">
         </div>
     </section>
 
 
     <!-- Sección de Planning -->
     <section class="planning-section">
-        <h2 class="section-title">Planning</h2>
+        <h2 class="section-title">TIMELINE</h2>
         <div class="timeline-container">
             <div class="timeline">
 
@@ -202,62 +209,42 @@
 
     <!-- Sección de Detalles del Evento (Ceremonia) -->
     <section class="details">
-        <h2 class="section-title">Ceremonia</h2>
+        <h2 class="section-title">CEREMONIA</h2>
         <div class="ceremony-container">
             <img src="media/ceremonia-3.png" alt="Iglesia Santa María Magdalena" class="watercolor-effect">
             <p class="description-text"> La ceremonia tendrá lugar a las <strong class="numeros"> 12:30</strong> horas en la <strong>Iglesia Santa María Magdalena</strong>, Torrelaguna.</p>
         </div>
-        <!-- Mapa de la Iglesia Santa María Magdalena -->
+        <!-- Botón para abrir la ubicación de la Ceremonia -->
         <a href="https://www.google.com/maps/dir/?api=1&destination=Iglesia+Santa+María+Magdalena,+Torrelaguna"
-        target="_blank" 
-        rel="noopener noreferrer">
-        <div class="map">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.2887445893467!2d-3.5391800842816947!3d40.82745897931882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4155f1e32b785d%3A0x29195b08647348a2!2sIglesia%20Santa%20Mar%C3%ADa%20Magdalena%2C%20Torrelaguna!5e0!3m2!1ses!2ses!4v1714406889995!5m2!1ses!2ses" 
-                width="100%" 
-                height="300" 
-                style="border:0; pointer-events: none;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
+            target="_blank"
+            class="button-style">
+            <strong>VER UBICACIÓN</strong>
         </a>
     </section>
 
     <!-- Sección de La Celebración -->
     <section class="celebration">
-        <h2 class="section-title">Celebración</h2>
+        <h2 class="section-title">CELEBRACIÓN</h2>
         <div class="celebration-container">
             <img src="media/celebracion-3.png" alt="Salón de Eventos 'El Paraíso'" class="watercolor-effect">
             <p class="description-text">La celebración tendrá lugar a las <strong class="numeros">14:30</strong> horas en la <strong>Finca Soto de Gracia</strong>, Valdetorres del Jarama.</p>
         </div>
-        <!-- Mapa con enlace para abrir Google Maps con indicaciones -->
+        <!-- Botón para abrir la ubicación de la Celebración -->
         <a href="https://www.google.com/maps/dir/?api=1&destination=Finca+Soto+de+Gracia,Valdetorres+de+Jarama"
-            target="_blank" 
-            rel="noopener noreferrer">
-        <div class="map">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.1234567890123!2d-3.5000000000000!3d40.8000000000000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4181234567890%3A0xabcdef1234567890!2sFinca%20Soto%20de%20Gracia!5e0!3m2!1ses!2ses!4v1714406889995!5m2!1ses!2ses" 
-                width="100%" 
-                height="300" 
-                style="border:0; pointer-events: none;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-        </a>              
+            target="_blank"
+            class="button-style">
+            <strong>VER UBICACIÓN</strong>
+        </a>
     </section>
 
     <!-- Sección de Asistencia -->
     <section class="asistencia">
-        <h2 class="section-title">Asistencia</h2>
+        <h2 class="section-title">ASISTENCIA</h2>
         <p class="description-text">¿NOS CONFIRMAÍS ASISTENCIA?</p>
         <a href="https://forms.gle/s81cU1Der4t9yNFx9" target="_blank" class="button-style"><strong>CONFIRMAR ASISTENCIA</strong></a>
-        <p class="description-text">GRACIAS</p>
         <a class="phone-link" href="tel:+34675 022 119">📞 María: <strong class="numeros">675 022 119</strong></a>
         <a class="phone-link" href="tel:+34645 771 950">📞 Mario: <strong class="numeros">645 771 950</strong></a>
+        <p class="description-text">¡GRACIAS!</p>
 
 
     </section>  
@@ -265,7 +252,7 @@
 
     <!-- Sección de Regalo -->
     <section class="regalo">
-        <h2 class="section-title">Nuestro mejor regalo...</h2>
+        <h2 class="section-title">NUESTRO MEJOR REGALO...</h2>
         <div class="gift-container">
             <img src="media/regalo-2.png" alt="Lista de bodas" class="watercolor-effect">
             <p class="description-text" >
@@ -278,16 +265,16 @@
 
     <!-- Sección de Servicio de Autobuses -->
     <section class="bus-service">
-        <h2 class="section-title">Servicio de Autobuses</h2>
+        <h2 class="section-title">SERVICIO DE AUTOBUSES</h2>
         <div class="bus-trip">
             <img src="media/ubicacion-3.webp" alt="Ubicación" class="bus-icon-image">
             <p class="bus-label">ORIGEN</p>
-            <p class="bus-location">Sitio desde el que sale el autobús de ida</p>
+            <p class="bus-location">Aparcamiento Municipal del Mayo (Confecciones)</p>
     
             <p class="bus-label">DESTINO</p>
-            <p class="bus-location">Sitio al que llega el autobús de ida</p>
+            <p class="bus-location">Finca Soto de Gracia</p>
     
-            <p class="bus-time-label">HORARIO DISPONIBLE</p>
+            <p class="bus-time-label">HORARIO</p>
             <p class="bus-time"><strong class="numeros">14:00</strong></p>
         </div>
     
@@ -296,20 +283,25 @@
         <div class="bus-trip">
             <img src="media/ubicacion-3.webp" alt="Ubicación" class="bus-icon-image">
             <p class="bus-label">ORIGEN</p>
-            <p class="bus-location">Sitio desde el que sale el autobús de vuelta</p>
+            <p class="bus-location">Finca Soto de Gracia</p>
     
             <p class="bus-label">DESTINO</p>
-            <p class="bus-location">Sitio al que llega el autobús de vuelta</p>
+            <p class="bus-location">Aparcamiento Municipal del Mayo (Confecciones)</p>
     
-            <p class="bus-time-label">HORARIO DISPONIBLE</p>
+            <p class="bus-time-label">HORARIO</p>
             <p class="bus-time"><strong class="numeros">22:45</strong></p>
         </div>
+
+        <hr class="bus-divider">
+
+        <p class="bus-location">Horarios y ubicaciones provisionales.</p>
+
     </section>
     
 
     <!-- Sección de Hoteles -->
     <section class="hoteles">
-        <h2 class="section-title">Hoteles</h2>
+        <h2 class="section-title">HOTELES</h2>
         <div class="hotel">
             <h3 class="description-text"><strong>Hotel Restaurante Posada del Camino Real</strong></h3>
             <p class="description-text">C/San Francisco, 6</p>
@@ -322,30 +314,30 @@
 
     <!-- Sección de Álbum de Fotos -->
     <section class="album">
-        <h2 class="section-title">Álbum de Fotos</h2>
-        <img src="media/camara-4.png" alt="Cámara de fotos" class="album-image">
-        <p class="description-text">Publica fotos subiéndolas al álbum compartido de Google Fotos de los novios.</p>
-        <a href="https://photos.app.goo.gl/e6TUrgjZAH5jRoRRA" target="_blank" class="button-style"><strong>ABRIR ÁLBUM</strong></a>        
-    </section>
+        <h2 class="section-title">ÁLBUM DE FOTOS</h2>
 
-    <!-- Sección de Galería de Fotos -->
-    <section class="galeria">
-        <div class="gallery-container">
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <div class="gallery-wrapper">
-                <div class="gallery">
-                    <img src="media/novios1.jpg" alt="Foto de los novios" class="slide">
-                    <img src="media/novios2.jpg" alt="Foto de los novios" class="slide">
-                    <img src="media/novios3.jpg" alt="Foto de los novios" class="slide">
-                    <img src="media/novios4.jpg" alt="Foto de los novios" class="slide">
+        <!-- Sección de Galería de Fotos -->
+        <section class="galeria">
+            <div class="gallery-container">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <div class="gallery-wrapper">
+                    <div class="gallery">
+                        <img src="media/novios1.jpg" alt="Foto de los novios" class="slide">
+                        <img src="media/novios2.jpg" alt="Foto de los novios" class="slide">
+                        <img src="media/novios3.jpg" alt="Foto de los novios" class="slide">
+                        <img src="media/novios4.jpg" alt="Foto de los novios" class="slide">
+                    </div>
                 </div>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
             </div>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
-        </div>
+        </section>
+
+        <p class="description-text">Nos encantaría ver las fotos que hicisteis en nuestra boda. Podéis subirlas al siguiente álbum.</p>
+        <a href="https://photos.app.goo.gl/e6TUrgjZAH5jRoRRA" target="_blank" class="button-style"><strong>ABRIR ÁLBUM</strong></a> 
+        <br>
+        <h2 class="final">¡OS ESPERAMOS!</h2>
+        <h3 class="final-nombres">MARÍA Y MARIO</h3>
     </section>
-
-
-
 
 </body>
 </html>
