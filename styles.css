@@ -358,7 +358,6 @@ body {
 
 .event-time {
     font-weight: bold;
-    font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
 }
 
@@ -674,7 +673,7 @@ section {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-
+.event-time,
 .numeros{
     font-family: 'Oranienbaum', 'serif';
 }
