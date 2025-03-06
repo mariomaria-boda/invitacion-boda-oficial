@@ -60,12 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     showSlide(slideIndex);
 
-    // === ANIMACIÓN DE LA CÁMARA ===
-    const cameraIcon = document.querySelector(".album-image");
-    setInterval(() => {
-        cameraIcon.classList.toggle("camera-blink");
-    }, 800);
-
     // ANIMACIÓN DEL ICONO DEL CALENDARIO
     const calendarIcon = document.querySelector(".calendar-icon");
     if (calendarIcon) {
@@ -83,6 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let isPlaying = false;
     let firstInteraction = false;
 
+    // Función para iniciar la música
     function autoPlayMusic() {
         audio.play().then(() => {
             musicIcon.src = "media/stop.png"; // Cambiar icono a stop
@@ -92,22 +87,25 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Función para activar la música con la primera interacción (clic, scroll o toque)
     function activateMusic() {
         if (!firstInteraction) {
             autoPlayMusic();
-            firstInteraction = true; // Solo activarlo una vez
+            firstInteraction = true;
+
+            // Eliminamos los eventos después de la primera interacción
             document.removeEventListener("click", activateMusic);
             document.removeEventListener("scroll", activateMusic);
             document.removeEventListener("touchstart", activateMusic);
         }
     }
 
-    // Detecta interacción en distintos eventos (para mejorar compatibilidad en móviles)
-    document.addEventListener("click", activateMusic);
-    document.addEventListener("scroll", activateMusic);
-    document.addEventListener("touchstart", activateMusic);
+    // Eventos para detectar interacción en móviles y ordenadores
+    document.addEventListener("click", activateMusic);     // Clic en cualquier parte
+    document.addEventListener("scroll", activateMusic);    // Scroll en ordenador
+    document.addEventListener("touchstart", activateMusic); // Primer toque en móvil
 
-    // Botón de música para control manual
+    // Botón manual para controlar la música
     musicButton.addEventListener("click", () => {
         if (isPlaying) {
             audio.pause();
@@ -118,4 +116,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         isPlaying = !isPlaying;
     });
+
+
 });
