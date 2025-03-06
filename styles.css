@@ -271,35 +271,20 @@ body {
 
 
 /* Sección de Planning */
+/* Sección Timeline */
 .planning-section {
     text-align: center;
     padding: 40px 20px;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: url('media/fondo-1.png') no-repeat center center/cover;
-    position: relative; /* Necesario para manejar los z-index */
+    position: relative;
     z-index: 1;
-    color: #333;
 }
 
-/* ===== AJUSTE DEL TIMELINE EN MÓVIL ===== */
-@media screen and (max-width: 768px) {
-    .timeline::before {
-        content: "";
-        position:absolute;
-        left: 93px;  /* Ajusta para que esté justo debajo de los iconos */
-        top: 0;
-        width: 4px;
-        height: 100%;
-        background-color: var(--timeline-color, #b386faa4);
-        z-index: 10;
-        transition: background-color 0.3s ease;
-    }
-}
-
-/* ===== ESTILO GENERAL DE TIMELINE ===== */
+/* Contenedor del timeline */
 .timeline-container {
     display: flex;
     justify-content: center;
@@ -309,130 +294,129 @@ body {
     position: relative;
 }
 
-/* Línea del timeline (ajustada para escritorio) */
-@media screen and (min-width: 769px) {
-    /* Ajuste general de la línea */
-    .timeline::before {
-        content: "";
-        position:absolute;
-        left: 316px;  /* Ajusta para que esté justo debajo de los iconos */
-        top: 0;
-        width: 4px;
-        height: 100%;
-        background-color: var(--timeline-color, #b386faa4);
-        z-index: 10;
-        transition: background-color 0.3s ease;
-    }
+/* Línea vertical del timeline */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #b386faa4; /* Lila */
+    z-index: 0;
+    transform: translateX(-50%);
 }
 
-/* Bocadillos de evento más pequeños */
-.event-bubble {
-    background-color: #d8c7f5a1;
-    padding: 10px 25px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Aumentar de 85% a 90% */
-    max-width: 600px; /* Agregar un ancho máximo */
-}
 
-/* Ajuste en los eventos */
+/* Cada evento */
 .timeline-event {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    justify-content: space-between;
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
+    margin-bottom: 20px;
+    position: relative;
 }
 
-/* Iconos dentro del círculo */
+/* Iconos del evento (izquierda, sin fondo) */
 .event-icon {
-    width: 25px;
-    height: 25px;
-    object-fit: contain;
-}
-
-
-/* Círculo de los iconos (más pequeño) */
-.event-circle {
-    width: 35px;  /* Reducido */
-    height: 35px;  /* Reducido */
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    margin-right: 20px;
-    flex-shrink: 0;
-    z-index: 10; /* Hace que se vea por encima del fondo */
 }
 
-/* Ajustar el círculo de fondo */
-.event-circle::before {
-    content: "";
-    position: absolute;
-    width: 45px; /* Más pequeño */
-    height: 45px; /* Más pequeño */
-    background-color: #ddccf8;
-    border-radius: 50%;
-    z-index: -1;
-}
-
-/* Bocadillo de evento (ahora más pequeño) */
-.event-bubble {
-    background-color: #dfd2f5a1;
-    padding: 10px 25px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-    width: 85%;
-}
-
-/* Contenido dentro del bocadillo */
-.event-content {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-}
-
-/* Iconos dentro del bocadillo (ahora más grandes) */
-.event-inline-icon {
-    width: 42px;
-    height: 42px;
+.event-icon img {
+    width: 60px;
+    height: 60px;
     object-fit: contain;
+    filter: grayscale(100%) contrast(0); /* Negro */
+    margin-right: 50px; /* Mayor margen entre icono y texto */
 }
 
-/* Contenedor del texto */
+/* Punto en la línea */
+.timeline-point {
+    width: 12px;
+    height: 12px;
+    background-color: #b78dfc; /* Lila */
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+/* Texto del evento (derecha, en negro) */
 .event-text {
-    display: flex;
-    flex-direction: column;
     text-align: left;
+    width: 200px;
+    margin-left: 70px; /* Desplazar el texto más a la derecha */
+    margin-right: -170px
 }
 
-/* Hora del evento */
 .event-time {
     font-weight: bold;
-    font-family: 'Oranienbaum', 'serif';
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
 }
 
-/* Descripción del evento */
 .event-description {
+    font-size: 16px;
     margin: 0;
 }
 
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0.5; }
-    100% { opacity: 1; }
+/* === RESPONSIVE PARA MÓVIL === */
+@media screen and (max-width: 768px) {
+    .timeline-container {
+        width: 100%;
+    }
+
+    .timeline::before {
+        left: 50%; /* Mantener la línea en el centro */
+    }
+
+    .timeline-event {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 100%;
+        position: relative;
+        gap: 30px; /* Aumentamos el espacio entre el icono y el texto */
+    }
+
+    .event-icon {
+        width: 50px; /* Tamaño de los iconos */
+        height: 50px;
+        margin-right: 10px; /* Mayor margen entre icono y texto */
+    }
+
+    .event-icon img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .timeline-point {
+        left: 50%; /* Mantener puntos alineados en la línea */
+    }
+
+    .event-text {
+        text-align: left;
+        width: auto;
+        margin-left: 30px; /* Desplazar el texto más a la derecha */
+        margin-right: -60px
+    }
+
+    .event-time {
+        font-size: 16px;
+    }
+
+    .event-description {
+        font-size: 14px;
+    }
 }
 
-/* Aplicar animación a los iconos de corazón y bus */
-.event-circle img {
-    animation: blink 1.5s infinite alternate;
-}
 
 
 /* Sección de Detalles del Evento */
@@ -706,4 +690,9 @@ section {
 
 .final-nombres{
     color:#de9efc;
+}
+
+#logo_final{
+    width: 70px;
+    height: 70px;
 }
