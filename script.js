@@ -81,41 +81,40 @@ document.addEventListener("DOMContentLoaded", function () {
     const audio = document.getElementById("background-music");
 
     let isPlaying = false;
+    let firstInteraction = false;
 
-    // Intentar iniciar la música automáticamente
     function autoPlayMusic() {
-        audio.volume = 0.5; // Asegurar volumen medio
         audio.play().then(() => {
             musicIcon.src = "media/stop.png"; // Cambiar icono a stop
             isPlaying = true;
         }).catch(error => {
-            console.log("Reproducción automática bloqueada. Esperando interacción del usuario.");
+            console.log("Reproducción automática bloqueada, esperando interacción del usuario.");
         });
     }
 
-    // Llamar a la función para intentar reproducir
-    autoPlayMusic();
-
-    // Si la reproducción automática fue bloqueada, iniciar con la primera interacción
-    function enableAutoPlay() {
-        if (!isPlaying) {
+    function activateMusic() {
+        if (!firstInteraction) {
             autoPlayMusic();
+            firstInteraction = true; // Solo activarlo una vez
+            document.removeEventListener("click", activateMusic);
+            document.removeEventListener("scroll", activateMusic);
+            document.removeEventListener("touchstart", activateMusic);
         }
-        document.removeEventListener("click", enableAutoPlay);
-        document.removeEventListener("scroll", enableAutoPlay);
     }
 
-    document.addEventListener("click", enableAutoPlay, { once: true });
-    document.addEventListener("scroll", enableAutoPlay, { once: true });
+    // Detecta interacción en distintos eventos (para mejorar compatibilidad en móviles)
+    document.addEventListener("click", activateMusic);
+    document.addEventListener("scroll", activateMusic);
+    document.addEventListener("touchstart", activateMusic);
 
-    // Botón para controlar la música
+    // Botón de música para control manual
     musicButton.addEventListener("click", () => {
         if (isPlaying) {
             audio.pause();
-            musicIcon.src = "media/play.png"; // Cambiar icono a play
+            musicIcon.src = "media/play.png";
         } else {
             audio.play();
-            musicIcon.src = "media/stop.png"; // Cambiar icono a stop
+            musicIcon.src = "media/stop.png";
         }
         isPlaying = !isPlaying;
     });
