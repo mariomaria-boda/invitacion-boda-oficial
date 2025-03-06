@@ -655,10 +655,13 @@ section {
     width: 90%;
     margin: auto;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery img {
-    width: 400px;
+    width: 380px;
     height: 400px;
     object-fit: cover;
     display: none;
