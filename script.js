@@ -22,19 +22,26 @@ document.addEventListener("DOMContentLoaded", function () {
     if (saveDateButton) {
         saveDateButton.addEventListener("click", () => {
             const title = "Boda de María & Mario";
-            const location = "Salón de Eventos 'El Paraíso'";
+            const location = "Iglesia de Santa María Magdalena, Pl. Mayor, 3, 28180 Torrelaguna, Madrid, España";
             const details = "¡Acompáñanos en nuestra boda! Será un día especial lleno de amor y felicidad.";
-
+    
             // Fecha y hora en la zona horaria local
             const startDate = "20250920T123000"; // 20 de septiembre 2025, 12:30 PM
-            const endDate = "20250921T050000";   // 21 de septiembre 2025, 5:00 AM
-
-            // Crear la URL de Google Calendar SIN el sufijo "Z" (para respetar zona horaria local)
-            const googleCalendarUrl = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${startDate}/${endDate}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}&sf=true&output=xml`;
-
+            const endDate = "20250920T223000";   // 20 de septiembre 2025, 22:30 PM
+    
+            // Color lavanda (Google lo asocia con `colorId=4`)
+            const colorId = 4;
+    
+            // Recordatorio de 30 minutos antes (popup)
+            const reminders = encodeURIComponent('[{"method":"popup","minutes":30}]');
+    
+            // Construcción de la URL de Google Calendar
+            const googleCalendarUrl = `https://calendar.google.com/calendar/u/0/r/eventedit?text=${encodeURIComponent(title)}&dates=${startDate}/${endDate}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}&sf=true&output=xml&add=Reminder&reminders=${reminders}&colorId=${colorId}`;
+    
             window.open(googleCalendarUrl, "_blank"); // Abre Google Calendar en una nueva pestaña
         });
     }
+    
 
 
     // === GALERÍA AUTOMÁTICA CON FLECHAS ===

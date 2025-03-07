@@ -21,7 +21,7 @@ body {
 .section-title {
     /*font-family: 'Dancing Script', cursive;*/
     font-family: 'Cormorant Garamond', serif;
-    font-size: 42px;
+    font-size: 30px;
     font-weight: 700;
     /*color: #000000;*/
     letter-spacing: 1px;
@@ -126,21 +126,10 @@ body {
 
 
 /* Seccion cuenta atras */
-/* "Save the Date" - Estilo manuscrito */
-.save-the-date {
-    /*font-family: 'Dancing Script', cursive;*/
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 42px;
-    font-weight: 700;
-    /*color: #000000;*/
-    color: #333;
-    letter-spacing: 1px;
-}
-
 /* Fecha "20.09.2025" - Estilo elegante */
 .wedding-date {
     font-family: 'Oranienbaum', 'serif';
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 400;
     color: #333;
     letter-spacing: 2px;
@@ -547,15 +536,15 @@ section {
 
 /* Estilo de cada trayecto */
 .bus-trip {
-    margin: 20px 0;
-    padding: 15px;
+    margin: 10px 0;
+    padding: 10px;
 }
 
 .bus-icon-image {
     width: 45px; /* Ajusta el tamaño según necesites */
     height: auto;
     display: block;
-    margin: 10px auto;
+    margin: 5px auto;
     opacity: 0.8; /* Un poco de transparencia para suavidad */
 }
 
@@ -565,14 +554,15 @@ section {
     font-size: 18px;
     color: #7d7d7d;
     font-weight: bold;
-    margin-top: 10px;
+    margin-bottom: -10px;
 }
 
 .bus-location {
     font-size: 18px;
     font-weight: bold;
     color: #3a3a3a;
-    margin-bottom: 10px;
+    /*margin-bottom: 5px;*/
+    margin-bottom: -10px;
 }
 
 /* Estilo del horario */
@@ -580,6 +570,7 @@ section {
     font-size: 18px;
     color: #7d7d7d;
     font-weight: bold;
+    margin-bottom: -10px;
 }
 
 .bus-time {
@@ -594,7 +585,7 @@ section {
     height: 1px;
     background-color: #d2bef3c4;
     border: none;
-    margin: 20px auto;
+    margin: 7px auto;
 }
 
 
@@ -688,7 +679,7 @@ section {
 
 
 .final-nombres{
-    color:#de9efc;
+    color:#d2bef3;
 }
 
 #logo_final{
