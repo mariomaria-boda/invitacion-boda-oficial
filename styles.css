@@ -318,6 +318,23 @@ body {
 }
 
 .event-icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    filter: grayscale(100%) contrast(0); /* Negro */
+    margin-right: 50px; /* Mayor margen entre icono y texto */
+}
+
+/* Iconos del evento (izquierda, sin fondo) */
+.event-icon-bus {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-icon-bus img {
     width: 60px;
     height: 60px;
     object-fit: contain;
