@@ -398,9 +398,21 @@ body {
     }
 
     .event-icon img {
-        width: 40px;
-        height: 40px;
+        width: 80px;
+        height: 80px;
     }
+
+    .event-icon-bus {
+        width: 50px; /* Tamaño de los iconos */
+        height: 50px;
+        margin-right: 10px; /* Mayor margen entre icono y texto */
+    }
+
+    .event-icon-bus img {
+        width: 600px;
+        height: 60px;
+    }
+
 
     .timeline-point {
         left: 50%; /* Mantener puntos alineados en la línea */
