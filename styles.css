@@ -14,7 +14,7 @@ body {
     /*background-color: #f8f4f4;*/
     width: 100%;
     overflow-x: hidden;
-    color: #333;
+    color: #000000;
 }
 
 /* Estilo para los títulos de secciones */
@@ -30,9 +30,9 @@ body {
 /* Estilo general para los botones */
 .button-style {
     background-color:  #dfcff880; /* Beige más oscuro en su estado normal */
-    color: #333; /* Texto oscuro para contraste */
+    color: #000000;/* Texto oscuro para contraste */
     font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     letter-spacing: 1px;
     padding: 12px 30px;
@@ -52,9 +52,9 @@ body {
 /* Estilo para los textos descriptivos */
 .description-text {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 400;
-    color: #3a3a3a;
+    color: #000000;
     line-height: 1.5;
     margin-top: 10px;
     text-align: center;
@@ -62,8 +62,6 @@ body {
 
 /* Aplica un efecto de difuminado solo en los bordes */
 .watercolor-effect {
-    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
-    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
     display: block;
     margin: auto;
     max-width: 100%;
@@ -83,6 +81,12 @@ body {
 /* Sección de bienvenida */
 .hero {
     background: url('media/fondo-1.png') no-repeat center center/cover;
+    text-align: center;
+    width: 90%;
+}
+
+.hero img{
+    margin-top: -50px;
 }
 
 
@@ -131,7 +135,15 @@ body {
     font-family: 'Oranienbaum', 'serif';
     font-size: 30px;
     font-weight: 400;
-    color: #333;
+    color: #000000;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+.wedding-date-letter{
+    font-size: 30px;
+    font-weight: 400;
+    color: #000000;
     letter-spacing: 2px;
     margin-top: 5px;
 }
@@ -167,6 +179,9 @@ body {
     text-align: center;
     padding: 20px;
     background: url('media/fondo-1.png') no-repeat center center/cover;
+    padding: 40px 20px;
+    text-align: center;
+    width: 90%;
 }
 
 /* Contenedor de la cuenta regresiva */
@@ -186,7 +201,7 @@ body {
     font-family: 'Oranienbaum', 'serif';
     font-size: 18px;
     font-weight: 400;
-    color: #333;
+    color: #000000;
     letter-spacing: 2px;
 }
 
@@ -195,7 +210,7 @@ body {
     font-family: 'Cormorant Garamond', serif;
     font-size: 16px;
     font-weight: 400;
-    color: #666;
+    color: #000000;
     letter-spacing: 1px;
     margin-top: 5px;
 }
@@ -213,7 +228,7 @@ body {
 .photo-section {
     /*background-color: #f5f3ef; /* Beige claro */
     text-align: center;
-    padding: 40px 20px;
+    /*padding: 40px 20px;*/
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -244,194 +259,18 @@ body {
     font-family: 'Cormorant Garamond', serif;
     font-size: 25px;
     font-weight: bold;
-    color: #333;
-    margin-top: 15px;
+    color: #000000;
+    margin-top: -150px;
 }
 
 /* Frase romántica */
 .photo-quote {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 400;
-    color: #3a3a3a;
+    color: #000000;
     line-height: 1.5;
-    margin-top: 10px;
-}
-
-
-/* Sección de Planning */
-/* Sección Timeline */
-.planning-section {
-    text-align: center;
-    padding: 40px 20px;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url('media/fondo-1.png') no-repeat center center/cover;
-    position: relative;
-    z-index: 1;
-}
-
-/* Contenedor del timeline */
-.timeline-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    position: relative;
-}
-
-/* Línea vertical del timeline */
-.timeline::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 0;
-    width: 3px;
-    height: 100%;
-    background-color: #b386faa4; /* Lila */
-    z-index: 0;
-    transform: translateX(-50%);
-}
-
-
-/* Cada evento */
-.timeline-event {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-/* Iconos del evento (izquierda, sin fondo) */
-.event-icon {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.event-icon img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    filter: grayscale(100%) contrast(0); /* Negro */
-    margin-right: 50px; /* Mayor margen entre icono y texto */
-}
-
-/* Iconos del evento (izquierda, sin fondo) */
-.event-icon-bus {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.event-icon-bus img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    filter: grayscale(100%) contrast(0); /* Negro */
-    margin-right: 50px; /* Mayor margen entre icono y texto */
-}
-
-/* Punto en la línea */
-.timeline-point {
-    width: 12px;
-    height: 12px;
-    background-color: #b78dfc; /* Lila */
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-}
-
-/* Texto del evento (derecha, en negro) */
-.event-text {
-    text-align: left;
-    width: 200px;
-    margin-left: 70px; /* Desplazar el texto más a la derecha */
-    margin-right: -170px
-}
-
-.event-time {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.event-description {
-    font-size: 16px;
-    margin: 0;
-}
-
-/* === RESPONSIVE PARA MÓVIL === */
-@media screen and (max-width: 768px) {
-    .timeline-container {
-        width: 100%;
-    }
-
-    .timeline::before {
-        left: 50%; /* Mantener la línea en el centro */
-    }
-
-    .timeline-event {
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        max-width: 100%;
-        position: relative;
-        gap: 30px; /* Aumentamos el espacio entre el icono y el texto */
-    }
-
-    .event-icon {
-        width: 50px; /* Tamaño de los iconos */
-        height: 50px;
-        margin-right: 10px; /* Mayor margen entre icono y texto */
-    }
-
-    .event-icon img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .event-icon-bus {
-        width: 50px; /* Tamaño de los iconos */
-        height: 50px;
-        margin-right: 10px; /* Mayor margen entre icono y texto */
-    }
-
-    .event-icon-bus img {
-        width: 600px;
-        height: 60px;
-    }
-
-
-    .timeline-point {
-        left: 50%; /* Mantener puntos alineados en la línea */
-    }
-
-    .event-text {
-        text-align: left;
-        width: auto;
-        margin-left: 30px; /* Desplazar el texto más a la derecha */
-        margin-right: -60px
-    }
-
-    .event-time {
-        font-size: 16px;
-    }
-
-    .event-description {
-        font-size: 14px;
-    }
+    margin-top: -8px;
 }
 
 
@@ -506,8 +345,8 @@ section {
     text-decoration: none; /* Quita el subrayado */
     transition: color 0.3s;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    color: #3a3a3a;
+    font-size: 22px;
+    color: #000000;
     line-height: 1.5;
     margin-top: 10px;
     text-align: center;
@@ -520,7 +359,7 @@ section {
 /* Asegurar que no cambie de color al hacer clic */
 .phone-link:visited,
 .phone-link:active {
-    color: #3a3a3a; /* Mantiene el color original */
+    color: #000000; /* Mantiene el color original */
     text-decoration: none;
 }
 
@@ -539,6 +378,12 @@ section {
 .gift-container {
     text-align: center;
     margin-bottom: 30px;
+}
+
+.gift-container img{
+    margin-top: -70px;
+    margin-bottom: -70px;
+
 }
 
 /* Imagen del regalo */
@@ -567,45 +412,36 @@ section {
 .bus-trip {
     margin: 10px 0;
     padding: 10px;
-}
-
-.bus-icon-image {
-    width: 45px; /* Ajusta el tamaño según necesites */
-    height: auto;
-    display: block;
-    margin: 5px auto;
-    opacity: 0.8; /* Un poco de transparencia para suavidad */
+    text-align: center; /* Centrar contenido */
 }
 
 
 /* Etiquetas de origen y destino */
 .bus-label {
-    font-size: 18px;
-    color: #7d7d7d;
+    font-size: 20px;
+    color: #000000;
     font-weight: bold;
     margin-bottom: -10px;
 }
 
 .bus-location {
-    font-size: 18px;
-    font-weight: bold;
-    color: #3a3a3a;
+    font-size: 20px;
+    color:#000000;
     /*margin-bottom: 5px;*/
     margin-bottom: -10px;
 }
 
 /* Estilo del horario */
 .bus-time-label {
-    font-size: 18px;
-    color: #7d7d7d;
+    font-size: 20px;
+    color: #000000;
     font-weight: bold;
     margin-bottom: -10px;
 }
 
 .bus-time {
-    font-size: 18px;
-    font-weight: bold;
-    color: #3a3a3a;
+    font-size: 20px;
+    color: #000000;
 }
 
 /* Línea divisoria entre los trayectos */
@@ -617,6 +453,34 @@ section {
     margin: 7px auto;
 }
 
+/* Contenedor del icono y la palabra "IDA" / "VUELTA" */
+.bus-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrado horizontal */
+    gap: 0px; /* Espacio entre el icono y el texto */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Icono de ubicación con color exacto `#d2bef3` */
+.bus-icon-image {
+    width: 45px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(67%) sepia(10%) saturate(900%) hue-rotate(210deg); /* Aplica color #d2bef3 */
+    opacity: 0.6; /* Un poco de transparencia para suavidad */
+}
+
+
+/* Texto "IDA" y "VUELTA" en el mismo tono */
+.bus-label-ida,
+.bus-label-vuelta {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d2bef3; /* Exacto mismo color */
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
 
 /* Hoteles */
 .hotel {
@@ -624,11 +488,17 @@ section {
     padding: 15px;
     border: 2px solid #d2bef3c4; /* Beige en los bordes */
     border-radius: 10px;
-    max-width: 400px; /* Reducimos el ancho */
     margin-left: auto;
     margin-right: auto;
     /*background-color: #f8f5f1; /* Blanco roto */
-    color: #3a3a3a; /* Texto más visible */
+    color: #000000; /* Texto más visible */
+    max-width: 400px;
+}
+
+.hoteles{
+    padding: 40px 20px;
+    text-align: center;
+    width: 90%;
 }
 
 
@@ -664,7 +534,7 @@ section {
 }
 
 .gallery img {
-    width: 380px;
+    width: 400px;
     height: 400px;
     object-fit: cover;
     display: none;
@@ -702,7 +572,7 @@ section {
     font-family: 'Cormorant Garamond', serif;
     font-size: 25px;
     font-weight: bold;
-    color: #333;
+    color: #000000;
     margin-top: 15px;
 }
 
@@ -712,6 +582,8 @@ section {
 }
 
 #logo_final{
-    width: 70px;
-    height: 70px;
+    width: 120px;
+    height: 120px;
+    margin-top: -20px;
+    margin-bottom: -20px;
 }
