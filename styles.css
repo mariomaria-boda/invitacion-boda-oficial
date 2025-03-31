@@ -86,7 +86,7 @@ body {
 }
 
 .hero img{
-    margin-top: -50px;
+    margin-top: -20px;
 }
 
 
@@ -133,27 +133,29 @@ body {
 /* Fecha "20.09.2025" - Estilo elegante */
 .wedding-date {
     font-family: 'Oranienbaum', 'serif';
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 400;
     color: #000000;
     letter-spacing: 2px;
-    margin-top: 5px;
+    margin-top: -70px;
 }
 
 .wedding-date-letter{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
     color: #000000;
     letter-spacing: 2px;
-    margin-top: 5px;
+    margin-top: -80px;
+    margin-bottom: 0px;
+    padding: 0;
 }
+
 
 /* Contenedor del Calendario */
 .calendar-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
 }
 
 /* Estilo de la Imagen del Calendario */
@@ -260,7 +262,7 @@ body {
     font-size: 25px;
     font-weight: bold;
     color: #000000;
-    margin-top: -130px;
+    margin-top: -60px;
 }
 
 /* Frase romántica */
@@ -468,6 +470,7 @@ section {
     height: auto;
     filter: brightness(0) saturate(100%) invert(67%) sepia(10%) saturate(900%) hue-rotate(210deg); /* Aplica color #d2bef3 */
     opacity: 0.6; /* Un poco de transparencia para suavidad */
+    margin-bottom: -25px;
 }
 
 

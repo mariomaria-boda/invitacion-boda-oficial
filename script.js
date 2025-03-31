@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     
 
-
+    
     // === GALERÍA AUTOMÁTICA CON FLECHAS ===
     let slideIndex = 0;
     const slides = document.querySelectorAll(".gallery img");
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".prev").addEventListener("click", () => moveSlide(-1));
     document.querySelector(".next").addEventListener("click", () => moveSlide(1));
 
-    setInterval(() => moveSlide(1), 5000);
+    //setInterval(() => moveSlide(1), 5000);
 
     showSlide(slideIndex);
 
